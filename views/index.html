@@ -19,7 +19,20 @@
     <br>
     <br>
     <br>
-  
+
+    <div class="container tbox">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h1><strong>Welcome to Eddie's Calculation Tool!</strong></h1>
+            <br>
+            <p><strong>We have functions such as addition, subtraction, multiplication, division, power, and percentage available!</strong></p>
+            <p><strong>Happy Calculating!</strong></p>
+          </div>
+        </div>
+      </div>
+
+      <br>
+      <br>
     <!--Start of Calculator-->
     <table class="text-center d-flex justify-content-center">
         <!--Setting up rows-->
@@ -36,15 +49,15 @@
             </td>
 
             <td>
-                <button type="button" class="btn btn-primary" onclick="">+/-</button>
+                <button type="button" class="btn btn-primary" onclick="posneg()">+/-</button>
             </td>
 
             <td>
-                <button type="button" class="btn btn-primary" onclick="">%</button>
+                <button type="button" class="btn btn-primary" onclick="percentage()">%</button>
             </td>
 
             <td>
-                <button type="button" class="btn btn-primary" onclick="">/</button>
+                <button type="button" class="btn btn-primary" onclick="buttonNum('/')">/</button>
             </td>
         </tr>
 
@@ -107,11 +120,19 @@
                 <button type="button" class="btn btn-primary btntake2" onclick="buttonNum('0')">0</button>
             </td>
 
-            <td colspan="2">
-                <button type="button" class="btn btn-primary btntake2" onclick="calculateResult()">=</button>
+            <td>
+                <button type="button" class="btn btn-primary squared" onclick="square()">^2</button>
+            </td>
+
+            <td>
+                <button type="button" class="btn btn-primary btntake4 equals" onclick="calculateResult()">=</button>
             </td>
         </tr>
     </table>
+
+    <br>
+    <br>
+    <br>
 
     <!--End of Calculator-->
 
